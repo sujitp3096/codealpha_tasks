@@ -1,0 +1,16 @@
+{
+  "name": "ecovana-sustainable-ecommerce",
+  "version": "2.0.0",
+  "description": "EcoVana sustainable e-commerce internship project",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "sql.js": "^1.13.0"
+  }
+}

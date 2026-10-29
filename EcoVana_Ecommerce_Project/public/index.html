@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#163D2B">
+  <meta name="description" content="EcoVana — thoughtful essentials for greener everyday living.">
+  <title>EcoVana — Small choices. Greener living.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar glass">
+    <a class="brand" href="#" aria-label="EcoVana home"><span class="brand-mark">E</span> EcoVana<span class="brand-dot">.</span></a>
+    <nav class="nav-links"><a href="#shop">Shop</a><a href="#why">Our vibe</a><a href="/login.html">Login</a><a href="/register.html">Register</a></nav>
+    <div class="top-actions">
+      <button class="icon-button" id="accountBtn" aria-label="Account">♙ <span id="accountLabel">Sign in</span></button>
+      <button class="cart-button" id="cartBtn" aria-label="Open cart">Bag <span class="cart-count" id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> LIVE LIGHTER · SHOP CONSCIOUSLY</div>
+        <h1>Small choices.<br><span>Greener living.</span></h1>
+        <p>Discover thoughtful, eco-friendly essentials for a better everyday life. Choose reusable, low-waste products that feel good to use and kinder to the planet.</p>
+        <a class="primary-button" href="#shop">Shop sustainably <span>↗</span></a>
+        <div class="hero-note"><span class="note-line"></span> Made with care. Chosen with purpose.</div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-orb"></div>
+        <div class="hero-image-wrap"><img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=1100&q=90" alt="Reusable bottle and sustainable everyday essentials" class="hero-image"></div>
+        <div class="floating-card glass"><span class="floating-icon">✳</span><div><strong>Less, but better.</strong><small>Better choices for everyday life</small></div></div>
+        <div class="hero-index">01 <span>—</span> 08</div>
+      </div>
+    </section>
+
+    <section class="trust-strip glass" id="why">
+      <div><span class="trust-icon">✦</span><span>Thoughtful materials</span></div>
+      <div><span class="trust-icon">↗</span><span>Simple, secure checkout</span></div>
+      <div><span class="trust-icon">♡</span><span>Less waste, more living</span></div>
+    </section>
+
+    <section class="category-section" id="categories">
+      <div class="section-heading category-heading"><div><div class="eyebrow">FIND YOUR GREEN ROUTINE</div><h2>Shop by <span>category.</span></h2><p>Thoughtful essentials for every corner of your everyday life.</p></div><a class="text-link" href="#shop">View all products <span>↗</span></a></div>
+      <div class="category-grid">
+        <a class="category-card" href="#shop" data-jump-category="Reusables"><img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=600&q=85" alt="Reusable water bottle"><span class="category-icon">♧</span><strong>Reusable Bottles</strong><small>Refill. Reuse. Repeat.</small></a>
+        <a class="category-card" href="#shop" data-jump-category="Home"><img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=600&q=85" alt="Natural home essentials"><span class="category-icon">⌂</span><strong>Eco-Friendly Home</strong><small>Make room for better.</small></a>
+        <a class="category-card" href="#shop" data-jump-category="Personal Care"><img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=600&q=85" alt="Natural personal care products"><span class="category-icon">✳</span><strong>Organic Personal Care</strong><small>Gentle by nature.</small></a>
+        <a class="category-card" href="#shop" data-jump-category="Lifestyle"><img src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=600&q=85" alt="Reusable cotton tote bag"><span class="category-icon">♧</span><strong>Green Lifestyle</strong><small>Carry change with you.</small></a>
+        <a class="category-card" href="#shop" data-jump-category="Home"><img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=600&q=85" alt="Reusable cup and tea essentials"><span class="category-icon">♻</span><strong>Zero Waste Essentials</strong><small>Less waste, more living.</small></a>
+      </div>
+    </section>
+
+    <section class="shop-section" id="shop">
+      <div class="section-heading">
+        <div><div class="eyebrow">THE CONSCIOUS COLLECTION</div><h2>Better choices, <span>beautifully made.</span></h2></div>
+        <label class="search-box glass"><span>⌕</span><input id="searchInput" type="search" placeholder="Find your greener essential..." aria-label="Search products"><kbd>↵</kbd></label>
+      </div>
+      <div class="filters" id="filters">
+        <button class="filter active" data-category="All">All items <span>↗</span></button>
+        <button class="filter" data-category="Reusables">Reusables</button>
+        <button class="filter" data-category="Personal Care">Personal care</button>
+        <button class="filter" data-category="Home">Home & living</button>
+        <button class="filter" data-category="Lifestyle">Lifestyle</button>
+      </div>
+      <div class="product-grid" id="productGrid"><div class="loading glass">Finding your next favourite…</div></div>
+    </section>
+
+    <section class="mission-section" id="mission">
+      <div class="mission-copy"><div class="eyebrow">OUR MISSION</div><h2>A cleaner planet<br>is in our <span>hands.</span></h2><p>We believe sustainable living should feel simple. Discover everyday products that help reduce waste and make mindful choices a little easier.</p><a class="primary-button" href="#shop">Explore the collection <span>↗</span></a></div>
+      <div class="mission-stats"><div><strong>100%</strong><span>Thoughtful choices</span></div><div><strong>50+</strong><span>Greener essentials</span></div><div><strong>1 planet</strong><span>Worth protecting</span></div></div>
+      <img class="mission-image" src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=900&q=85" alt="Green plants growing in natural light">
+    </section>
+    <section class="bottom-banner glass"><div><div class="eyebrow">A LIGHTER WAY TO LIVE</div><h2>Small choices.<br><span>Greener living.</span></h2></div><a class="primary-button" href="#shop">Find your essentials <span>↗</span></a><div class="banner-shape">✳</div></section>
+  </main>
+  <footer><a class="brand" href="#"><span class="brand-mark">E</span> EcoVana<span class="brand-dot">.</span></a><span>Live green · Shop sustainably · Save our planet</span><span>EcoVana · Small choices, greener living 🌿</span></footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer glass" id="cartDrawer" aria-label="Shopping cart">
+    <div class="drawer-head"><div><div class="eyebrow">YOUR SELECTION</div><h2>Your bag <span id="drawerItemCount">(0)</span></h2></div><button class="close-button" data-close aria-label="Close cart">×</button></div>
+    <div class="cart-select-all"><label><input type="checkbox" id="selectAllCart" checked> Select all items</label><button type="button" id="clearCartSelection">Deselect all</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer"><div class="subtotal"><span>Selected subtotal</span><strong id="subtotal">₹0</strong></div><p id="selectedSummary">All items in your bag are selected.</p><button class="primary-button full-button" id="checkoutBtn">Checkout selected items <span>↗</span></button></div>
+  </aside>
+
+  <section class="modal glass" id="authModal" role="dialog" aria-modal="true" aria-label="Account">
+    <button class="close-button modal-close" data-close aria-label="Close">×</button>
+    <div class="eyebrow">YOUR ECOVANA ACCOUNT</div><h2 id="authTitle">Welcome back.</h2><p class="modal-subtitle" id="authSubtitle">Sign in to pick up where you left off.</p>
+    <form id="authForm">
+      <div class="field" id="nameField" hidden><label for="authName">Your name</label><input id="authName" autocomplete="name" minlength="2" placeholder="Alex Morgan"></div>
+      <div class="field"><label for="authEmail">Email address</label><input id="authEmail" type="email" autocomplete="email" required placeholder="you@example.com"></div>
+      <div class="field"><label for="authPassword">Password</label><input id="authPassword" type="password" minlength="8" autocomplete="current-password" required placeholder="At least 8 characters"></div>
+      <button class="primary-button full-button" id="authSubmit">Sign in <span>↗</span></button>
+    </form>
+    <p class="auth-switch" id="authSwitch">New here? <button type="button" id="toggleAuth">Create an account</button></p>
+  </section>
+
+  <section class="modal glass product-modal" id="productModal" role="dialog" aria-modal="true" aria-label="Product details">
+    <button class="close-button modal-close" data-close aria-label="Close">×</button><div id="productDetail"></div>
+  </section>
+
+  <section class="modal glass" id="addressModal" role="dialog" aria-modal="true" aria-label="Save delivery address">
+    <div class="eyebrow">YOUR ECOVANA ACCOUNT</div><h2>Where do you live?</h2><p class="modal-subtitle">Save your delivery address once. We’ll use it to make future checkouts faster, and you can update it anytime.</p>
+    <form id="addressForm"><div class="field"><label for="profileAddress">Full delivery address</label><textarea id="profileAddress" rows="4" required minlength="8" maxlength="500" placeholder="House / flat, street, area, city, state, PIN code" autocomplete="street-address"></textarea></div>
+      <button class="primary-button full-button" type="submit">Save address <span>↗</span></button>
+      <p class="fine-print">Your address is saved to your EcoVana account database and used for order delivery.</p>
+    </form>
+  </section>
+
+  <section class="modal glass checkout-modal" id="checkoutModal" role="dialog" aria-modal="true" aria-label="Checkout">
+    <button class="close-button modal-close" data-close aria-label="Close">×</button>
+    <div class="eyebrow">ALMOST YOURS</div><h2>Where should we send it?</h2><p class="modal-subtitle">Add a shipping address to place your order.</p>
+    <form id="checkoutForm"><div class="field"><label for="shippingAddress">Shipping address</label><textarea id="shippingAddress" rows="3" required minlength="8" placeholder="House / flat, street, city, state, PIN code"></textarea></div>
+      <div class="field"><label for="paymentMethod">Payment method</label><select id="paymentMethod" required><option value="Cash on Delivery">Cash on Delivery</option><option value="UPI (demo)">UPI / Online payment (demo)</option></select></div>
+      <p class="payment-note" id="paymentNote">Pay when your order arrives.</p>
+      <div class="checkout-total"><span>Order total</span><strong id="checkoutTotal">₹0</strong></div>
+      <button class="primary-button full-button" type="submit">Place order <span>↗</span></button>
+      <p class="fine-print">UPI is in demo mode and does not charge real money. A payment gateway must be configured for real online payments.</p>
+    </form>
+  </section>
+
+  <section class="modal glass orders-modal" id="ordersModal" role="dialog" aria-modal="true" aria-label="Order history">
+    <button class="close-button modal-close" data-close aria-label="Close">×</button>
+    <div class="eyebrow">YOUR ECOVANA ACCOUNT</div><h2>Your orders.</h2><p class="modal-subtitle">A little overview of everything you've ordered.</p>
+    <div id="ordersList" class="orders-list"></div>
+  </section>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script>
+    document.querySelectorAll('[data-jump-category]').forEach(card => card.addEventListener('click', () => {
+      const category = card.dataset.jumpCategory;
+      setTimeout(() => { const filter = document.querySelector(`[data-category="${category}"]`); if (filter) filter.click(); }, 80);
+    }));
+  </script>
+  <script src="/app.js"></script>
+</body>
+</html>
